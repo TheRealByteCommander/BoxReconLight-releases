@@ -27,16 +27,19 @@ Dies ist die **Download- und Anleitungsseite**. Der Quellcode ist privat.
 
 ## Download
 
-Die aktuelle Version finden Sie immer unter **[Releases](../../releases/latest)**.
+Aktuelle Version: **3.1.0** · [alle Versionen](../../releases/latest)
 
-| System | Datei | Hinweis |
+| System | Download | Hinweis |
 |---|---|---|
-| **macOS** (Apple-Chip M1/M2/M3 …) | `BoxReconLight-<Version>-macos-arm64.dmg` | Siehe erster Start unten |
-| **Linux** (x86_64, glibc 2.36+, z. B. Ubuntu 23.04+/Debian 12+) | `BoxReconLight-<Version>-linux-x86_64.tar.gz` | Zusatzpakete nötig, siehe unten |
-| **Windows** (10/11, 64-bit) | `BoxReconLight-<Version>-windows.zip` | Ordner zusammen lassen, siehe unten |
+| **macOS** (Apple-Chip M1/M2/M3 …) | [BoxReconLight-3.1.0-macos-arm64.dmg](../../releases/download/v3.1.0/BoxReconLight-3.1.0-macos-arm64.dmg) | Erster Start siehe unten |
+| **Windows** (10/11, 64-bit) | [BoxReconLight-3.1.0-windows.zip](../../releases/download/v3.1.0/BoxReconLight-3.1.0-windows.zip) | Ordner zusammen lassen, siehe unten |
+| **Linux** (x86_64, glibc 2.36+, z. B. Ubuntu 23.04+/Debian 12+) | [BoxReconLight-3.1.0-linux-x86_64.tar.gz](../../releases/download/v3.1.0/BoxReconLight-3.1.0-linux-x86_64.tar.gz) | Zusatzpakete nötig, siehe unten |
 
 > Die Programme sind nicht von Apple/Microsoft signiert. Beim ersten Start warnt das Betriebssystem –
 > das ist normal, siehe [Problemlösung](#problemlösung).
+>
+> Auf der Release-Seite zeigt GitHub zusätzlich automatisch „Source code (zip/tar.gz)“. Diese Archive
+> enthalten **nur diese Anleitung und die Screenshots, keinen Programm-Quellcode** – der bleibt privat.
 
 ---
 
@@ -67,7 +70,8 @@ Die aktuelle Version finden Sie immer unter **[Releases](../../releases/latest)*
 
 ### Windows (10/11, 64-bit)
 
-1. Die `BoxReconLight-<Version>-windows.zip` herunterladen und **entpacken** (Rechtsklick → „Alle extrahieren …“).
+1. Die [`BoxReconLight-3.1.0-windows.zip`](../../releases/download/v3.1.0/BoxReconLight-3.1.0-windows.zip)
+   herunterladen und **entpacken** (Rechtsklick → „Alle extrahieren …“).
 2. Den entstandenen Ordner **BoxReconLight** an einen festen Ort legen (z. B. `C:\BoxReconLight`) und **komplett
    zusammen lassen** – `BoxReconLight.exe` startet nur mit dem Ordner `_internal` daneben.
 3. **BoxReconLight.exe** per Doppelklick starten. Beim ersten Mal meldet sich Windows (SmartScreen) mit
