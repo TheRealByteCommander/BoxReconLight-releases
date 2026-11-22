@@ -33,7 +33,7 @@ Die aktuelle Version finden Sie immer unter **[Releases](../../releases/latest)*
 |---|---|---|
 | **macOS** (Apple-Chip M1/M2/M3 …) | `BoxReconLight-<Version>-macos-arm64.dmg` | Siehe erster Start unten |
 | **Linux** (x86_64, glibc 2.36+, z. B. Ubuntu 23.04+/Debian 12+) | `BoxReconLight-<Version>-linux-x86_64.tar.gz` | Zusatzpakete nötig, siehe unten |
-| **Windows** | folgt | bis dahin selbst baubar (siehe unten) |
+| **Windows** (10/11, 64-bit) | `BoxReconLight-<Version>-windows.zip` | Ordner zusammen lassen, siehe unten |
 
 > Die Programme sind nicht von Apple/Microsoft signiert. Beim ersten Start warnt das Betriebssystem –
 > das ist normal, siehe [Problemlösung](#problemlösung).
@@ -65,10 +65,17 @@ Die aktuelle Version finden Sie immer unter **[Releases](../../releases/latest)*
 3. Für den Kamerazugriff muss Ihr Benutzer in der Gruppe `video` sein
    (`sudo usermod -aG video $USER`, danach neu anmelden).
 
-### Windows
+### Windows (10/11, 64-bit)
 
-Noch keine fertige `.exe`. Bis dahin lässt sie sich auf einem Windows-Rechner mit Python 3.13 selbst bauen
-(`pip install -r requirements.txt && pyinstaller boxreconlight.spec`).
+1. Die `BoxReconLight-<Version>-windows.zip` herunterladen und **entpacken** (Rechtsklick → „Alle extrahieren …“).
+2. Den entstandenen Ordner **BoxReconLight** an einen festen Ort legen (z. B. `C:\BoxReconLight`) und **komplett
+   zusammen lassen** – `BoxReconLight.exe` startet nur mit dem Ordner `_internal` daneben.
+3. **BoxReconLight.exe** per Doppelklick starten. Beim ersten Mal meldet sich Windows (SmartScreen) mit
+   „Der Computer wurde durch Windows geschützt“ → **Weitere Informationen** → **Trotzdem ausführen**.
+4. Für die Kamera ggf. unter *Einstellungen → Datenschutz → Kamera* den Zugriff für Apps erlauben.
+
+> Tipp: Für einen Startmenü-Eintrag eine Verknüpfung zu `BoxReconLight.exe` erstellen – die Datei selbst aber
+> im Ordner lassen.
 
 ---
 
